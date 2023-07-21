@@ -1,63 +1,62 @@
 @import "Base";
 
 body {
-    min-height: 100vh;
-    height: 100%;
-    background-image: url(../Images/Worlds-2017-Promo-HD-Wallpaper-Background-Official-Art-Artwork-fan-art-League-of-Legends-lol.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    backdrop-filter: blur(5px) brightness(0.5);
-    header {
-        padding: 40px 0;
-        margin: auto;
-        width: max-content;
-        display: flex;
-        align-items: center;
-
-        button {
-            font-size: 40px;
-            background-color: transparent;
-            color: lightgray;
-        }
-
-        img {
-            width: 300px;
-        }
+  min-height: 100vh;
+  height: 100%;
+  background-image: url(../Images/Worlds-2017-Promo-HD-Wallpaper-Background-Official-Art-Artwork-fan-art-League-of-Legends-lol.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px) brightness(0.5);
+  header {
+    padding: 40px 0;
+    margin: auto;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    button {
+      font-size: 40px;
+      background-color: transparent;
+      color: lightgray;
     }
 
-    .page {
-        font-size: 20px;
+    img {
+      width: 300px;
+    }
+  }
+
+  .page {
+    font-size: 20px;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+
+      > a {
+        position: relative;
         color: lightgray;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-decoration: none;
+        > div {
+          position: absolute;
+          z-index: 5;
+          right: 0px;
+          top: 10px;
+          font-size: 15px;
+          width: 300px;
 
-        >div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
-
-            >a {
-                position: relative;
-                color: lightgray;
-                text-decoration:none;
-                >div {
-                    position: absolute;
-                    z-index: 5;
-                    right: 0px;
-                    top: 10px;
-                    font-size: 15px;
-                    width: 300px;
-
-                    .title {
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
-                }
-            }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+          }
         }
+      }
     }
+  }
 }
